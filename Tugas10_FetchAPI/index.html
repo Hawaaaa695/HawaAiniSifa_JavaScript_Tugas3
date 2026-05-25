@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="weather-app">
+
+    <section class="weather-card">
+
+      <div class="header">
+        <div>
+          <p class="label">Fetch API Project</p>
+          <h1>Weather App</h1>
+        </div>
+      </div>
+
+      <div class="search-area">
+        <input type="text" id="cityInput" placeholder="Masukkan nama kota...">
+        <button onclick="getWeather()">Cari Cuaca</button>
+      </div>
+
+      <p id="loading" class="loading">Mengambil data cuaca...</p>
+      <p id="errorMessage" class="error-message"></p>
+
+      <div id="weatherResult" class="weather-result">
+        <div class="main-weather">
+          <h2 id="cityName">Jakarta</h2>
+          <p id="weatherDescription">Cuaca saat ini</p>
+          <h3 id="temperature">--°C</h3>
+        </div>
+
+        <div class="weather-details">
+          <div class="detail-box">
+            <p>Kelembapan</p>
+            <h4 id="humidity">--%</h4>
+          </div>
+
+          <div class="detail-box">
+            <p>Kecepatan Angin</p>
+            <h4 id="windSpeed">-- km/jam</h4>
+          </div>
+
+          <div class="detail-box">
+            <p>Curah Hujan</p>
+            <h4 id="rain">-- mm</h4>
+          </div>
+
+          <div class="detail-box">
+            <p>Waktu Data</p>
+            <h4 id="weatherTime">--</h4>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Methods Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <h2>DataLab</h2>
+      <p>Student Score Analysis</p>
+    </aside>
+
+    <main class="content">
+
+      <div class="header">
+        <div>
+          <h1>Student Score Analysis</h1>
+          <p>Manipulasi data mahasiswa menggunakan JavaScript Array Methods</p>
+        </div>
+      </div>
+
+      <div class="summary">
+        <div class="summary-card blue">
+          <p>Total Mahasiswa</p>
+          <h2 id="totalData">0</h2>
+        </div>
+
+        <div class="summary-card green">
+          <p>Rata-rata Nilai</p>
+          <h2 id="rataNilai">0</h2>
+        </div>
+
+        <div class="summary-card orange">
+          <p>Nilai Tertinggi</p>
+          <h2 id="nilaiTertinggi">0</h2>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <input type="text" id="searchInput" placeholder="Cari nama mahasiswa...">
+
+        <select id="filterSelect">
+          <option value="semua">Semua Status</option>
+          <option value="lulus">Lulus</option>
+          <option value="tidak">Tidak Lulus</option>
+        </select>
+
+        <select id="sortSelect">
+          <option value="default">Urutan Awal</option>
+          <option value="tinggi">Nilai Tertinggi</option>
+          <option value="rendah">Nilai Terendah</option>
+          <option value="az">Nama A-Z</option>
+        </select>
+      </div>
+
+      <div class="form-input">
+        <input type="text" id="namaInput" placeholder="Nama Mahasiswa">
+        <input type="text" id="jurusanInput" placeholder="Jurusan">
+        <input type="number" id="tugasInput" placeholder="Tugas 1">
+        <input type="number" id="utsInput" placeholder="UTS">
+        <input type="number" id="uasInput" placeholder="UAS">
+        <input type="number" id="kehadiranInput" placeholder="Kehadiran">
+        <button onclick="tambahData()">Tambah Data</button>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Nama</th>
+              <th>Jurusan</th>
+              <th>Tugas 1</th>
+              <th>UTS</th>
+              <th>UAS</th>
+              <th>Kehadiran</th>
+              <th>Rata-rata</th>
+              <th>Status</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+
+          <tbody id="dataTable"></tbody>
+        </table>
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

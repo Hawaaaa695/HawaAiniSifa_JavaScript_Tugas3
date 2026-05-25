@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Tugas JavaScript</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+
+      min-height:100vh;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      font-family:"Times New Roman", serif;
+
+      background:
+        linear-gradient(
+          135deg,
+          #fde2e4,
+          #e2ece9,
+          #bee1e6
+        );
+
+      padding:25px;
+
+    }
+
+    .container{
+
+      width:100%;
+      max-width:950px;
+
+      background:
+        rgba(255,255,255,0.55);
+
+      backdrop-filter:blur(15px);
+
+      border-radius:35px;
+
+      padding:50px;
+
+      box-shadow:
+        0 15px 40px rgba(0,0,0,0.12);
+
+      text-align:center;
+
+    }
+
+    h1{
+
+      font-size:52px;
+
+      color:#5c5470;
+
+      margin-bottom:12px;
+
+    }
+
+    .subtitle{
+
+      font-size:18px;
+
+      color:#7b6d8d;
+
+      margin-bottom:45px;
+
+    }
+
+    .menu{
+
+      display:grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      gap:25px;
+
+    }
+
+    .card{
+
+      text-decoration:none;
+
+      padding:35px 25px;
+
+      border-radius:28px;
+
+      transition:0.3s;
+
+      box-shadow:
+        0 10px 25px rgba(0,0,0,0.08);
+
+      color:#4b4453;
+
+    }
+
+    .card:hover{
+
+      transform:
+        translateY(-8px);
+
+      box-shadow:
+        0 18px 35px rgba(0,0,0,0.12);
+
+    }
+
+    .card h2{
+
+      font-size:32px;
+
+      margin-bottom:15px;
+
+    }
+
+    .card p{
+
+      font-size:18px;
+
+      line-height:1.6;
+
+    }
+
+    /* WARNA CARD */
+
+    .card1{
+
+      background:#ffd6e0;
+
+    }
+
+    .card2{
+
+      background:#d6f6ff;
+
+    }
+
+    .card3{
+
+      background:#fff0c9;
+
+    }
+
+    .card4{
+
+      background:#d9ffd6;
+
+    }
+
+    .footer{
+
+      margin-top:45px;
+
+      color:#7b6d8d;
+
+      font-size:16px;
+
+    }
+
+    @media(max-width:768px){
+
+      .menu{
+
+        grid-template-columns:1fr;
+
+      }
+
+      .container{
+
+        padding:35px 25px;
+
+      }
+
+      h1{
+
+        font-size:40px;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Tugas JavaScript</h1>
+
+    <p class="subtitle">
+      Hawa Aini Sifa - 502520310032
+    </p>
+
+    <div class="menu">
+
+      <a
+        href="Tugas7_Kalkulator/index.html"
+        class="card card1"
+      >
+
+        <h2>Tugas 7</h2>
+
+        <p>
+          Calculator berbasis web menggunakan JavaScript.
+        </p>
+
+      </a>
+
+      <a
+        href="Tugas8_TodoList/index.html"
+        class="card card2"
+      >
+
+        <h2>Tugas 8</h2>
+
+        <p>
+          To-Do List interaktif menggunakan DOM manipulation.
+        </p>
+
+      </a>
+
+      <a
+        href="Tugas9_ArrayMethods/index.html"
+        class="card card3"
+      >
+
+        <h2>Tugas 9</h2>
+
+        <p>
+          Student Score Analysis menggunakan array methods.
+        </p>
+
+      </a>
+
+      <a
+        href="Tugas10_FetchAPI/index.html"
+        class="card card4"
+      >
+
+        <h2>Tugas 10</h2>
+
+        <p>
+          Weather App menggunakan Fetch API dan async JavaScript.
+        </p>
+
+      </a>
+
+    </div>
+
+    <div class="footer">
+      Pemrograman Web JavaScript
+    </div>
+
+  </div>
+
+</body>
+</html>
